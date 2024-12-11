@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity XP Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>🏆 Productivity XP Tracker</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="activity-input">
+                <h2>📝 Log Your Activity</h2>
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Enter your username">
+                    <textarea id="userActivity" placeholder="What did you accomplish today? Be specific about duration and effort..."></textarea>
+                    <button id="logActivityButton">Log Activity 📈</button>
+                </div>
+            </section>
+
+            <div class="stats-container">
+                <section class="xp-display">
+                    <h2>Today's Progress</h2>
+                    <div class="xp-card">
+                        <span class="xp-label">XP Gained:</span>
+                        <p id="dailyXP">0 XP</p>
+                    </div>
+                </section>
+
+                <section class="leaderboard">
+                    <h2>🏅 Global High Score Leaderboard</h2>
+                    <div class="leaderboard-container">
+                        <ul id="leaderboardList"></ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>💪 Track your productivity and compete with friends!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
